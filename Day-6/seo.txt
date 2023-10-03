@@ -1,0 +1,24 @@
+SEO :- Search Engine Optimization
+Core Web vitals are used by mainly by Google which considers to rank two pages.
+
+if the content of ur website is different then Core Web vitals is not so important
+but if the content of ur website is similar to other webpages ur compiting with then Core Web vitals is important.
+
+Core Web vitals
+1. CLS :- Cummulative Layout Shift
+    It is a measure of the largest burst of layout shift scores for every unexpected layout shift occurs during the entire lifespan of a page.
+    A layout shift occurs any time a visible element changes its position from one rendered frame to the next.
+
+2.LCP :- Largest Contentful Paint
+    It's the metric reports the render time of the largest image or text block visible within the viewpoint, relative to when the page first started loading.
+    or
+    a performance metric that measures how long it takes the main content of a web page to load and be visible on screen
+
+    To provide a good user experience, sites should strive to have LCP of 2.5seconds or less and threshold to measure is the 75th percentile of page loads
+
+3. FID :- First Input Delay
+    It measures the time from when a user first interacts with a page(that is, when they click a link, tap on a button, or use a custom, JavaScript-powered control)to the time when the browser is actually able to begin processing event handlers in response to that interaction.
+
+    Good FID score:- To provide a good user experience, sites should strive to have 100 milliseconds or less.
+
+To check a rating of ur website just do inspect > lighthouse > device (Moblie / PC) then analyse
