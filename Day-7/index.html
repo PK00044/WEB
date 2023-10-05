@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- we gonna build forms and about its input tag, label tag, textarea tag -->
+    <!-- get request and post request:- get request:- its a simple request where just tell server something post request:- is when we send in most of the cases, when we have a lot of data -->
+    <h1>Form to apply</h1>
+    <form action="post">
+        <!-- we use div tag its a block element and use to give new space -->
+        <div>
+            <!-- here for= is taken as id of input  -->
+            <label for="username">Enter your username</label>
+            <!-- placeholder tag is used to highlight the text area run the code in the browser to know  -->
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <!-- if we wont use proper id for label then if we click on female letters it wont get selected we have to go click the round symbol for selecting (not so user friendly) -->
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox" name="subscribe" value="yes">
+            <label for="checkbox">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <!-- if we dont want to (Enter your comment here....)as a block letters in the area instead want to highlight them then use label tag and div for new space instead of br-->
+            <label for="comment">Enter your comment</label>
+            <div>
+                <textarea id="comment" name="comment" cols="50" rows="4">
+                </textarea>
+            </div>
+        </div>
+
+        <div>
+            <select name="fruits">
+                <option value="Apple">Apple</option>
+                <option value="Cherry">Cherry</option>
+                <option value="Banana">Banana</option>
+            </select>
+        </div>
+
+    </form>
+</body>
+
+</html>
