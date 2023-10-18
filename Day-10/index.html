@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video,audio and media</title>
+</head>
+<body>
+    <h2>Video tag</h2>
+    <h4><Synatx:->&lt;video src=".mp4">&lt;/video></Synatx:-></h4>
+    <div>
+        we going to use video tag to operate with video we have some attributes here like <br>
+        src, controls, autoplay, loop, muted, poster, width and height. In src tag the video file might be from server also or from outside the system also.
+    </div>
+        <video src="WhatsApp Video 2023-10-19 at 12.30.22 AM.mp4" height="225" controls poster="OIP.jpeg"></video>
+<ol>
+       <li>&lt;video src=".mp4" <b>autoplay</b>&gt;:- This autoplays the video and there wont be any controls to stop or control the video coz we haven't used controls attribute here.</li>
+    <div>
+         <li>&lt;video src=".mp4"<b>autoplay controls</b>&gt;:- This autoplays the video and now we have the control attribute also here now we can have controls over the video.</li>
+        </div>
+        <div>
+            <li>&lt;video src=".mp4" <b>loop</b> &gt;:- Now the video loops.</li>
+        </div>
+    <div>
+        <li>&lt;video src=".mp4" <b>muted</b> &gt;:-This mutes the video</li>
+    </div>
+    <div>
+        &lt;video src=".mp4" <b>controls poster="OIP.jpeg"</b> &gt;:-The poster tag just act as a Thumbnail to a video.
+    </div>
+</ol>
+<h2>Audio Tag</h2>
+<h4><Synatx:-><h4><Synatx:->&lt;audio src=".mp3">&lt;/audio></Synatx:-></h4></Synatx:-></h4>
+<div>
+    <audio src="WhatsApp Audio 2022-12-12 at 19.35.04.mp3" preload="none" controls></audio>
+    <div>
+    <b>The same goes with audio tags also just one different audio attribute is preload
+        &lt;audio src=".mp3" <b>controls preload=""</b> &gt;:- Specifies if and how the audio should be loaded when the page loads("auto","metadata","none(default)")
+    </div>
+        <ul>
+            <li>None:- This is the default value.It indicates that the browser should not preload the audio file at all.The audio file will only start downloading when the user initates playback.</li>
+            <li>Metadata:- It only preloads the metadata of the audio file such as basic information,duration etc</li>
+            <li>Auto:- This instructs the browser to preload the entire audio file as much as possible.It starts to preload the audio file in background to get ready and can be available whenever the user is ready to play.</li>
+        </ul>
+    </b>
+</div>
+<div>
+    <h2>SVG(Media)</h2>
+    Scalable Vector Graphics(SVG) has become an indispensable part if modern web development.SVG enables developers to create high-quality,Scalable Graphics that look crisp at any size or resolution.
+    <br><br>
+    SVG stands for Scalable Vector Graphics. Unlike raster images like PNGs or JPGs, SVGs are not pixel-based. They're composed of vectors—mathematical formulas that describe shapes, paths, and fills. This means SVGs can be resized without losing quality.
+    <br>
+    <h4>Why Use SVG?</h4>
+    <h4>Scalability</h4>
+    SVG images can be scaled indefinitely without losing quality, which is ideal for responsive web design.
+    <h4>File Size</h4>
+    SVG files are often smaller than their raster counterparts, especially for simple shapes and icons.
+
+    <h4>Flexibility</h4>
+    SVGs can be styled, animated, and manipulated using CSS and JavaScript.
+
+    <h4>How to Embed SVG in HTML</h4>
+        SVG can be embedded in HTML in several ways:
+        <ol>
+            <li>Inline SVG: Directly writing the SVG XML code within HTML.</li>
+            <li>Using an &lt;img> tag: Point the src attribute to an SVG file.</li>
+            <li>Using CSS: Setting SVG as a background image in a CSS file.</li>
+        </ol>
+        <h4>Inline SVG Example</h4>
+        &lt;svg height="100" width="100">
+            &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />&lt;/svg><br>
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+        <h4>&lt;img> Tag Example</h4>
+        &lt;img src=".svg" alt="Sample SVG"><br>You have to create a file of .svg and store the code of the image and mention <b>xmlns</b>to work or else it won't work. <br>
+        <img src="img.svg" alt="Sample SVG">
+        <h4>CSS Background Example</h4>
+        .background {
+            background-image: url('image.svg');
+          }
+</div>
+<div>
+    <h4>SVG Attributes</h4>
+        SVG comes with a set of attributes to control its behavior:
+        <ol>
+            <li>
+                width and height: To set the dimensions.
+            </li>
+            <li>
+                viewBox: To set the coordinate system.
+            </li>
+            <li>
+                fill and stroke: To set the colors.
+            </li>
+        </ol>
+</div>
+<div>
+    <h4>Creating a Simple Icon</h4>
+    <svg height="30"  width="30">
+        <rect width="30" height="30" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+    </svg>
+    <h4>Creating Complex Shapes</h4>
+    SVG can also be used to create more complex shapes like polygons, lines, and text.
+    <br><br>
+    SVG offers a powerful way to add scalable and interactive graphics to your HTML documents. Its compatibility with CSS and JavaScript makes it a versatile choice for modern web development. Whether you're creating simple icons or intricate illustrations, SVG has got you covered.
+</div>
+<div>
+    <h2>IFRAME</h2>
+    iFrames, or Inline Frames, are an integral part of modern web development. They allow you to embed another HTML page within your current page.We'll delve into the utility of iFrames, their attributes, and some use-cases. <br><br>
+
+    An iFrame is an HTML element that enables an inline frame for the embedding of external content. Essentially, you can load another web page within a designated area of your current webpage.
+
+    <h3>Why Use iFrames?</h3>
+    iFrames offer a variety of use-cases:
+    <ul>
+        <li><b>Content Isolation:</b> iFrames allow you to isolate third-party content, which can improve security.</li>
+        <li><b>Modularity</b>: Easily embed external plugins, widgets, or content.
+        </li>
+        <li><b>Resource Separation</b>: Content within an iFrame can load separately from the rest of the page.
+        </li>
+    </ul>
+    <h3>Basic Syntax</h3>
+    &lt;iframe src="URL" width="width" height="height">&lt;/iframe>
+
+    <h4>Attributes of iFrame</h4>
+    Several attributes can enhance the functionality of an iFrame:
+    <ol>
+    <li>src: Specifies the URL of the page to embed.</li>
+    <li>height and width: Define the dimensions.</li>
+    <li>frameborder: Indicates whether to display a border.</li>
+    <li>scrolling: Controls the scrollbars.</li>
+    <li>name: For targeting the iFrame in</li> JavaScript
+    </ol>
+    <h2>A Practical Example</h2>
+
+    &lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen>&lt;/iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=SYQfXxlAGswR9qsV&amp;start=867" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h4>Embedding Google Maps</h4>
+    &lt;iframe src="https://maps.google.com/maps?q=LOCATION&output=embed" frameborder="0">&lt;/iframe>
+    <iframe src="https://maps.google.com/maps?q=LOCATION&output=embed" frameborder="0"></iframe>
+    <br><br>
+    iFrames offers a convenient way to embed external content into your web pages. Their flexibility and ease of use make them an invaluable tool for modern web development.
+</div>
+<h1>My own SVG</h1>
+<img src="img2.svg" alt="hjhj">
+</body>
+</html>
