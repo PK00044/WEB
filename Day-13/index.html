@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+<body>
+    <div>
+    <h2>HTML Entities</h2>
+    <p>HTML entities are a crucial part of HTML markup language. They enable you to display characters that are reserved in HTML or that aren't readily available on the keyboard.  We'll explore what HTML entities are, their types, and how to use them.</p>
+    <h3>What Are HTML Entities?</h3>
+    <p>HTML entities are used to represent special characters in a format that the browser can understand. They start with an ampersand (&) and end with a semicolon (;).</p>
+    <h3>Why Use HTML Entities?</h3>
+    Here are some reasons:
+    <ul>
+        <li><b>Reserved Characters</b>: Characters like <, >, and & are reserved in HTML.</li>
+        <li><b>Special Symbols</b>: For symbols like ©, ®, or mathematical symbols.
+        </li>
+        <li><b>Non-Breaking Spaces</b>: To create white spaces that won't break into a new line.
+        </li>
+    </ul>
+    <h3>Common HTML Entities</h3>
+    & lt;  for < <br>
+    & gt;  for > <br>
+    & amp; for & <br>
+    & nbsp; for a non-breaking space <br>
+    & copy; for © <br>
+</div>
+    <h2>HTML Code Tag</h2>
+    <b>Tags</b>:&lt;code>&lt;/code>
+
+    <p>The HTML <code> tag is a powerful element for displaying code snippets within a webpage. It preserves both spaces and line breaks, making it ideal for showcasing code. In this blog post, we'll explore how to use the <code> tag effectively, especially in conjunction with Prism for code highlighting.</p>
+    <h3>What is the &lt;code> Tag?</h3>
+    <p>The <code> tag is a semantic HTML tag that's used for displaying code snippets. It can be used both inline and within a block-level element like &lt;pre>.
+    </p>
+    <h3>Why Use the &lt;code> Tag?
+    </h3>
+    <ul>
+        <li><b>Semantic Meaning</b>: Provides semantic value to the enclosed code.
+        </li>
+        <li><b>Readability</b>: This makes it easier for both browsers and developers to understand that the text is code.
+        </li>
+        <li><b>Styling</b>: Easier to style and highlight with CSS or JavaScript libraries like Prism.
+        </li>
+    </ul>
+    For Example:
+    <code>Your code here</code>
+    <h3>Using <code> with &lt;pre>&lt;/pre></h3>
+    &lt;pre>&lt;code>Your multiline code here&lt;/code>&lt;/pre>
+    <pre><code>Your multiline code here</code></pre>
+    For Example:Take a C code for example how we have used &lt;pre> and &lt;code> tags to represent the code.
+    <pre><code>#include &lt;stdio.h>
+        int main()
+        {
+            printf("Hello World");
+            return 0;
+        }
+    </code></pre>
+    <h3>HTML Quotation Tag </h3>
+    <p>
+        The use of quotations is common in textual content. HTML provides specific tags to handle this: &lt;blockquote> for block quotations and &lt;q> for inline quotations. We'll explore these tags, their attributes, and how to style them.
+    </p>
+    <h3>What Are &lt;blockquote> and &lt;q> Tags?</h3>
+    <p>
+        The &lt;blockquote> and <q> tags serve to define quotations in HTML. While &lt;blockquote> is used for longer, block-level quotes, &lt;q> is used for shorter, inline quotes.
+    </p>
+    <h3>Why Use These Tags?</h3>
+    <p>They provide semantic meaning to your quotations, making it easier for search engines to understand the context and relevance of the content.
+    </p>
+    <h3>Basic Syntax </h3>
+    &lt;blockquote> Tag
+    <pre><code>
+    &lt;blockquote cite="source-url">
+        Quotation text here.
+      &lt;/blockquote> </code></pre><br>
+    <blockquote cite="source-url">
+        Quotation text here.
+      </blockquote>
+    <h3>&lt;q> Tag</h3>
+    &lt;q cite="source-url">Quotation text here.&lt;/q> <br>
+    <q cite="source-url">Quotation text here.</q>
+    <h4>Attributes</h4>
+    Both &lt;blockquote> and &lt;q> tags support the cite attribute: <br>
+      *<b>cite</b>: Specifies the URL of the quote's source. <br>
+
+</body>
+</html>
