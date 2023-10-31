@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: yellow;
+        }
+        /* Class Selectors */
+        .red{
+            background-color: red;
+        }
+        /* ID Selector */
+        #blue
+        {
+            background-color: blue;
+        }
+        /* Child Selectors */
+        div > p {
+            color:green;
+            background-color: orange;
+        }
+        /* Descendent Selectors */
+        div p {
+            color: brown;
+            background-color: orange;
+        }
+        /* Universal Selector */
+        /* *{
+            /* margin: 0; */
+            /* padding: 100; */
+        /* }*/ 
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red ;
+        }
+        div:hover{
+            background-color: black;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Selectors</h2>
+    <q><acronym title="imp">IMPORTANT Video</acronym></q>
+    <b><a href="https://youtu.be/1cEG1T8beO4?si=u3MB4h-ixf-G1ust">Tutorial 17</a></b>
+        <dd>CSS selectors allow us to choose specific elements and apply styles to them</dd>
+
+    <h3>Element Selector</h3>
+    <div>
+        I'm a good Boy
+    </div>
+    <pre><code>
+        /* Element Selector */
+        div{
+            background-color: yellow;
+        }
+    </code></pre>
+    <h2>Class Selector used .red in CSS</h2>
+    <div class="red">
+        Hey I'm Pratham
+    </div>
+    <pre><code>
+        /* Class Selectors */
+        .red{
+            background-color: red;
+        }  
+    </code></pre>
+    <h2>ID Selector used #blue in CSS</h2>
+    <div id="blue">
+        Hey I'm Kubsad
+    </div>
+    <pre><code>
+        /* ID Selector */
+        #blue
+        {
+            background-color: blue;
+        }
+    </code></pre>
+    <h2>Child Selector</h2>
+    <div>
+        <p>
+            I'm a child selector
+        </p>
+    </div>
+    <pre><code>
+        div > p {
+            color:green;
+            background-color: orange;
+        }
+
+        <caption>This only applies if the tag is directly under that particular tag</caption>
+    </code></pre>
+    <h2>Descendent Selector</h2>
+    <div>
+        <article>
+            <p>
+            I'm a Descendent selector
+            </p>
+        </article>
+    </div>
+    <pre><code>
+        div p {
+            color:yellow;
+        }
+    </code></pre>
+    <h2>Universal Selector</h2>
+    <article>Used using *</article>
+    <pre><code>
+        *{
+            margin: 0;
+            padding: 100;
+        }
+    </code></pre>
+    <h2>Pseudo Selector</h2>
+    <div>
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.facebook.com">Go to Facebook</a>
+    </div>
+        
+        <pre><code>
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red ;
+        }
+        div:hover{
+            background-color: black;
+        }
+        </code></pre>
+    <main class="one">
+        <p>First one </p>
+        <p>Second one</p>
+        <p>Where ever &lt;p> tag is the first child there this Pseudo selector gets applied </p>
+        <pre><code>
+            p:first-child{
+            background-color: aqua;
+        }</code></pre>
+    </main>
+</body>
+</html>
