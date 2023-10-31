@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Adding CSS to our HTML Site</h2>
+    <ol>
+        <caption>Three Ways</caption>
+        <li>Inline CSS</li>
+        <li>Internal CSS</li>
+        <li>External CSS</li>
+    </ol>
+    <div>
+        <dl>
+            <dt>Inline CSS</dt>
+                <dd>This is used in an HTML page using &lt;style> attributes</dd>
+            <dt>Internal CSS</dt>
+                <dd>It means to add a &lt;style> tag and place HTML page's style within</dd>
+            <dt>External</dt>
+                <dd>
+                    It means to create a <b>.css</b>file and place all your styles inside that .css file
+                </dd>
+        </dl>
+    </div>
+    <h2>Now we gonna add some inline CSS to show how it's done:</h2>
+    <>Hey, this is Inline CSS</h2>
+    <div>
+        I'm a Good Boy.
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    This is the code below:-
+    <pre>
+        &lt;h2 style="color: yellow; background-color: red;">Hey, this is Inline CSS&lt;/h2>
+        &lt;div>
+            I'm a Good Boy.
+        &lt;/div>
+        &lt;p>Lorem ipsum dolor sit amet.&lt;/p>
+    </pre>
+    <ul>
+        <li>
+            Not Considered as a Good practice.
+        </li>
+    </ul>
+    <h2>Now we gonna add some Internal CSS to show how it's done:</h2>
+    <h2>Hey, this is Internal CSS</h2>
+    <div class="Internal">
+        I'm a Good Boy.
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    This is the code below:-
+    <pre>
+        &lt;h2>Hey, this is Inline CSS&lt;/h2>
+        &lt;div>
+            I'm a Good Boy.
+        &lt;/div>
+        &lt;p>Lorem ipsum dolor sit amet.&lt;/p>
+    </pre>
+    <pre><code><caption>Code For Internal CSS</caption>
+        &lt;style>
+            div.Internal{
+                background-color: black;
+                color: yellow;
+            }
+        &lt;/style>
+    </code></pre>
+    <ul>
+        <li>The Code Length increases</li>
+    </ul>
+    h2>Now we gonna add some External CSS to show how it's done:</h2>
+    <h2>Hey, this is External CSS</h2>
+    <p>Just Create a CSS file and link it in the particular HTMl File using &lt;link> attribute</p>
+    <pre><code><caption>Synatx:</caption>
+        &lt;link rel="stylesheet" href="style.css">
+    </code></pre>
+</body>
+</html>
