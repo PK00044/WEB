@@ -48,24 +48,85 @@
         </li>
         <li>Padding
             <ul>
+                <li>Padding is the space between the HTML content and the border. It gives internal spacing and helps to enhance the website.</li>
                 <li> The space between the actual content and the border of the element is the padding.</li>
                 <li>Padding is defined by the property padding.</li>
             </ul>
         </li>
         <li>Border
+            <a href="https://www.codewithharry.com/tutorial/css-borders/"></a>
             <ul>
                 <li>The border surrounds the content and padding and gives the visual border of the element.</li>
                 <li>The border properties can be controlled by the keyword border</li>
             </ul>
+            <h2>Border Style</h2>
+            <pre><code><html lang="en">
+&lt;head>
+    &lt;style>
+        .none {
+            border-style: none;
+        }
+        .hidden {
+            border-style: hidden;
+        }
+        .dotted {
+            border-style: dotted;
+        }
+        .dashed {
+            border-style: dashed;
+        }
+        .solid {
+            border-style: solid;
+        }
+        .double {
+            border-style: double;
+        }
+        .groove {
+            border-style: groove;
+        }
+        .ridge {
+            border-style: ridge;
+        }
+        .inset {
+            border-style: inset;  
+        }
+        .outset {
+            border-style: outset;
+        }
+    &lt;/style>
+&lt;/head>
+&lt;body>
+    &lt;p class="none">no border</p>
+    &lt;p class="hidden">Hidden Border</p>
+    &lt;p class="dotted">Dotted Border</p>
+    &lt;p class="dashed">Dashed Border</p>
+    &lt;p class="solid">Solid border</p>
+    &lt;p class="double">Double Border</p>
+    &lt;p class="groove">Groove border</p>
+    &lt;p class="ridge">ridge border</p>
+    &lt;p class="inset">inset border</p>
+    &lt;p class="outset">Outset Border</p>
+&lt;/body>
+&lt;/html></code></pre>
         </li>
         <li>Margin
             <ul>
                 <li>The margin is the space outside the element that separates it from other elements in the layout.</li>
                 <li>The margin of the element is controlled by the margin property.</li>
             </ul>
-        </li>
-        
+            selector{
+            margin: value1 value2 value2 value4;
+        }
+            In this method, each value represents the margin of individual sides (top, right, bottom, left).
+          <ol>
+            <li>top: value1</li>
+            <li>right: value2</li>
+            <li>bottom: value3</li>
+            <li>left: value4</li>
     </ol>
+            <li><b>Note</b>: Values can be specified in different units, such as pixels (px), em, rem, percentage (%), auto, etc.</li>
+        <li>Here, value 1 is the vertical margin (y-axis), and value 2 is the horizontal margin (x-axis).</li>
+     </li>
     <h2>Calculating the total dimension of the element</h2>
     <p>The total width and height of the element is calculated with the formula: <br><br>
 
