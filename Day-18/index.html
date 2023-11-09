@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Box Model</title>
+    <style>
+        .box{
+            background-color: aqua;      /* here I'll give for all the boxes bg color */
+        }
+        .box1{
+            color: yellow;    /* here I'll give just give for only box 1 property*/
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+            
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Box Model</h2>
+    <b>To revise the topic see the video</b> <br> <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xrxd6cEajhM?si=2Z83U3S4oqnpBRAy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
+    <p>The CSS Box model defines how elements are rendered and how their dimensions are calculated.<br><br>
+    
+    It describes the structure of an element as a rectangular box that has content, padding, a border, and a margin.<br><br>
+    
+    The box model consists of four main components, which are</p>
+    <ol>
+        <caption>It contains 4 areas</caption>
+        <li>Content
+            <ul>
+                <li>The inner most component of the box model is the actual content of the element. It can be text,image,video etc.</li>
+                <li>The content area is defined by the <b>width</b> and <b>height</b> properties.</li>
+            </ul>
+        </li>
+        <li>Padding
+            <ul>
+                <li> The space between the actual content and the border of the element is the padding.</li>
+                <li>Padding is defined by the property padding.</li>
+            </ul>
+        </li>
+        <li>Border
+            <ul>
+                <li>The border surrounds the content and padding and gives the visual border of the element.</li>
+                <li>The border properties can be controlled by the keyword border</li>
+            </ul>
+        </li>
+        <li>Margin
+            <ul>
+                <li>The margin is the space outside the element that separates it from other elements in the layout.</li>
+                <li>The margin of the element is controlled by the margin property.</li>
+            </ul>
+        </li>
+        
+    </ol>
+    <h2>Calculating the total dimension of the element</h2>
+    <p>The total width and height of the element is calculated with the formula: <br><br>
+
+        <b>Total Width</b> = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin <br><br>
+        
+        <b>Total Height</b> = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin</p> <br>
+    
+    <pre><code>
+        &lt;head>
+        &lt;style>
+                p{
+                    width: 200px;
+                    height: 300px;
+                    padding: 15px;
+                    border: 10px solid red;
+                    margin: 5px;
+                }
+            &lt;/style>
+        &lt;/head>
+    </code></pre>
+    <p>Here, the total height and width will be represented as <br><br>
+
+        <b>Total Width</b> = 200px (width) + 15px (left padding) + 15px (right padding) + 10px (left border) + 10px (right border) + 5px (left margin) + 5px (right margin) = 260px.
+        
+        <b>Total Height</b> = 300px (Height) + 15px (Top Padding) + 15px (Bottom Padding) + 10px (Top Border) + 10px (Bottom Border) + 5px (Top Margin) + 5px (Bottom Margin) = 360px</p>
+    <img src="box_model.png" alt="BOX-Model" width="800">
+
+    <div>
+    For Example: <h2>BOX 1</h2>
+    <div class="box box1">I am Box</div>
+    here padding of 10px is given and when we inspect -> computed. There we can see box model. Here is the image: <br> <br>
+    <img src="Screenshot (74).png" alt="Padding" width="800"> <br> <br>
+    <b>Now we have given Margin of 25px. It will apply outside the element and a border of 2px with solid blue color </b> <br><br>
+    When we add height to any element using style it first takes 200 height / width then addds up all other areas px like padding, border not margin <br><br>
+    So to avoid that we add extra box-sizing: Border Box in CSS. Now it adds up all the regions in the box to match height / width given here it is 200px. <b>As shown here</b><br><br>
+    <img src="Screenshot (76).png" alt="box-sizing" width="800">
+    <h2>Box 2</h2>
+    <div class="box box2">I am another box</div>
+    <p>Now we have given the same properties as box 1</p>
+
+    <h2>Margin Collapse</h2>
+    <p><b>I'll show u a pic for preview</b></p> <br><br>
+    <img src="Screenshot (77).png" alt="Margin Collapse" width="800"> <br><br>
+    <p>Now, when we inspect box 1 and box 2 separately, we can observe that the margin doesn't adds up to 50px it just shows for both as 25px as shown in the pic. This is called Margin Collapse </p>
+    <div>
+        <p>The Concept of Margin Collapse says that if the margin of two elements is overlapping, then the <b>Maximum</b> margin will be applied only once.</p>
+    </div>
+    <div>
+        For more simplified image is here:- 
+    </div>
+    <img src="OIP.jpeg" alt="Margin Collapse">
+
+
+
+</div>
+</body>
+</html>
