@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Property</title>
+</head>
+<body>
+    <h1>Text Properties</h1>
+
+
+
+<h2>Text decoration</h2>
+<p>We can decorate test using this style property </p>
+There are four values for text-decoration:
+
+overline: adds a line above the text
+underline: adds a line below the text
+line-through: Adds a line to the text.
+none: To remove decoration.
+
+<h2>Line height</h2>
+<p>The line-height property controls the spacing between the two lines of text.</p>
+<pre><code>
+    &lt;style>
+        h1{
+            line-height: 3.5;
+        }
+    &lt;/style>
+</code>
+</pre>
+<p>The value of 3.5 means that the space between lines will be 3.5 times the height of the font size.</p>
+
+<h2>Letter Spacing</h2>
+<p>The letter-spacing property allows to specify the spacing between each character in the text. <br>
+The property values can be in pixels (px), em, rem, percentage (%), etc.</p>
+
+<h2>Text Transformation</h2>
+<p>It transforms the text case.</p>
+<pre><code>
+selector {
+    text-transform: value;
+}
+</code></pre>
+<caption>There are four values for text-transform:</caption>
+<ol> 
+    <li><b>uppercase</b>: Transform text to uppercase (all capital letters).</li>
+    <li><b>lowercase</b>: transform text to lowercase (all small letters).</li>
+    <li><b>capitalise</b>: capitalise the first character from each word.</li>
+    <li><b>none</b>: To remove text transformation.</li>
+ </ol>
+<h2>Text Decoration</h2>
+<p>The text-decoration property adds various types of text decorations.</p>
+<pre><code>selector {
+    text-decoration: value;
+}
+</code></pre>
+<ul>
+    There are four values for text-decoration:
+    <li><b>overline:</b> adds a line above the text</li>
+        <li><b>underline</b>: adds a line below the text</li>
+        <li><b>line-through</b>: Adds a line to the text.</li>
+        <li><b>none</b>: To remove decoration.</li>
+</ul>
+<h2>You can even change the color of the decoration by</h2>
+<pre><code>selector {
+    text-decoration-color: value;
+}
+</code></pre>
+<h2>Text Alignment</h2>
+<p>The text alignment property is used to align the text within the container. Container can be a div, section, etc.</p>
+<pre><code>
+    selector{
+        text-align: value;
+    }
+</code></pre>
+<p>
+    There are four values for text alignment:
+    <ul>
+        <li><b>left</b>: align the text to the left.</li>
+        <li><b>centre:</b>align the text to the centre.</li>
+        <li><b> right</b>: align the text to the right.</li>
+        <li><b>justify:</b> spread the text evenly between the left and right margins.</li>
+    </ul>
+</p>
+<h2>Text Shadow</h2>
+<p>The Text-Shadow property adds a shadow to the left </p>
+<pre><code>
+    selector{
+        text-shadow:  Horizontal offset, vertical offset, blur radius, color;
+    }    
+</code></pre>
+
+<h2>You can even change the style of the decoration by</h2>
+<p>It can be described by:
+    text-decoration-style: solid;
+    text-decoration-style: double;
+    text-decoration-style: dotted;
+    text-decoration-style: dashed;
+    text-decoration-style: wavy;
+
+</p>
+
+
+
+<h2>You can even change the thickness of the decoration by</h2>
+<p>You change the thickness of the style</p>
+<p>It can be described by:
+    text-decoration-thickness: 7px;
+</p>
+
+
+
+
+
+
+
+<h2>Text Indent</h2>
+<p>You can add indentation to the text.</p>
+<p>It can be described by 
+    <pre><code>
+        selector{
+            text-indent: value;
+        }
+    </code></pre>
+</p>
+
+<h2>Text Overflow and Overflow</h2>
+<p>The text-overflow property handles text that overflows its container.</p>
+There are two values we can use with text-overflow:
+<ul>
+    <li>ellipsis: Truncates overflowing text with an ellipsis.</li>
+    <li>clip: clips the text without any visual indication.</li>
+</ul>
+<p><b>Overflow</b>has 4 Properties
+1. Auto
+2. hidden
+3. visible
+4. scroll</p>
+<p>Ypu can use this property:-
+    <pre><code>
+        selector{
+            text-overflow: value;
+            overflow : value;
+        }
+    </code></pre>
+</p>
+
+
+
+<h2>Word Break and Wrap</h2>
+<p>It just breaks the the words to fit in ur boarder or box</p>
+<p>Word-break has 3 ways
+    <ol>
+        <li>Break-all</li>
+        <li>keep-all</li>
+        <li>normal</li>
+    </ol>
+    word-wrap has 2 ways
+    <ol>
+        <li>break-word</li>
+        <li>normal</li>
+    </ol>
+</p>
+<p>It can be described by
+    <pre><code>
+        selector{
+            word-break: value;
+        }
+    </code></pre>
+</p>
+
+</body>
+</html>

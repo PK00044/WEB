@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts, Text & Color Properties </title>
+
+</head>
+<body>
+    <h1>Fonts</h1>
+    <h2>More About fonts we can read here:- <a href="https://www.codewithharry.com/tutorial/css-fonts/">https://www.codewithharry.com/tutorial/css-fonts/</a></h2>
+    <p class="f">Fonts play a crucial role in making your page visually appealing. Fonts decide how texts will look on the screen; depending on the website, different kinds of fonts are used.</p>
+    <ol>
+        <li><dt><b>Font Family</b></dt>
+            <dd>The font family property specifies the font stack. This is used to set the preferred font for the text content. <br>
+
+                We can define multiple font family names separated by commas based on priority. <br>
+                
+                Syntax:
+            <pre><code>selector{
+                font-family: font1, font2, font3;
+          }</code></pre> 
+          <pre><code>
+            <h2>Example</h2>
+&lt;style>
+   h1{
+         font-family: 'Courier New', Courier, monospace;
+    }
+    h2{
+         font-family: 'Times New Roman', Times, serif;
+       }
+        &lt;/style>
+    &lt;/head>
+    &lt;body>
+    &lt;h1>CodeWithHarry</h1>
+    &lt;h2>Hello World</h2>
+    </body>
+    </html></code></pre>
+        </dd>
+        </li>
+        <h2>Generic Font family</h2>
+        <caption>There are five generic font family names that serve as fallback options when specific fonts are not available:</caption>
+        <ol>
+            <li><b>serif</b>: generic serif fonts (like Times New Roman).</li>
+            <li><b>sans-serif</b>: generic sans-serif fonts (like Arial or Helvetica).</li>
+            <li><b>monospace</b>: generic monospaced fonts (like Courier New).</li>
+            <li><b>cursive</b>: generic cursive fonts (for handwritten styles).</li>
+            <li><b>fantasy</b>: generic fantasy fonts (for decorative styles).</li>
+        </ol>
+        <b>Tip</b>: It is recommended to end the font family with any of these generic font family names.
+    </ol>
+    <h2>Custom fonts</h2>
+    <p>We can also use custom fonts for our websites; here, we will be using <a href="https://fonts.google.com/">Google Fonts</a>. <br>
+
+        Follow the steps:</p>
+        <ol>
+            <li>Go to <a href="https://fonts.google.com/">https://fonts.google.com/</a></li>
+            <li>Select your preferred font.</li>
+            <li>Choose the fonts based on font weight.</li>
+            <li>Copy the import link and paste it on the top of the stylesheet.</li>
+            <li>Copy the font family and paste it wherever you want to use it.
+            </li>
+        </ol>
+    <h2>2.Font Style</h2>
+    <p>The font style property sets the style of the font. <br>
+
+        There are three types of font styles: italic, normal, and oblique. <br>
+        
+        Quick notes:</p>
+        <b>italic</b>: Italic texts are slightly to the right.
+        <b>normal</b>: Default text style.
+        <b>Oblique</b>: Oblique is similar to italic but has less bend
+<pre><code>
+    &lt;html lang="en">
+
+    &lt;head>
+        &lt;style>
+            #p1 {
+                font-style: italic;
+            }
+            #p2 {
+                font-style: normal;
+            }
+            #p3 {
+                font-style: oblique;
+            }
+        &lt;/style>
+    &lt;/head>
+    &lt;body>
+        &lt;p id="p1">font-style: italic</p>
+        &lt;p id="p2">font-style: normal</p>
+        &lt;p id="p3">font-style: oblique</p>
+    &lt;/body>
+    &lt;/html>
+</code></pre>
+<h2> CSS Font Weight</h2>
+<p>The font-weight property controls the thickness or boldness of the text. <br>
+
+    The values range from 100 (thin) to 900 (ultra-bold) and also have some predefined values such as lighter, bold, and bolder.</p>
+<pre><code>
+    &lt;html lang="en">
+        &lt;head>
+            &lt;style>
+                #p1 {
+                    font-weight: 100;
+                }
+                #p2 {
+                    font-weight: 200;
+                }
+                #p3 {
+                    font-weight: 300;
+                }
+                #p4 {
+                    font-weight: 400;
+                }
+                #p5 {
+                    font-weight: 500;
+                }
+                #p6 {
+                    font-weight: 600;
+                }
+                #p7 {
+                    font-weight: 700;
+                }
+                #p8 {
+                    font-weight: 800;
+                }
+                #p9 {
+                    font-weight: 900;
+                }
+                #p10 {
+                    font-weight: lighter;
+                }
+                #p11 {
+                    font-weight: bold;
+                }
+                #p12 {
+                    font-weight: bolder;
+                }
+            &lt;/style>
+        &lt;/head>
+        &lt;body>
+            &lt;p id="p1">font-weight: 100</p>
+            &lt;p id="p2">font-weight: 200</p>
+            &lt;p id="p3">font-weight: 300</p>
+            &lt;p id="p4">font-weight: 400</p>
+            &lt;p id="p5">font-weight: 500</p>
+            &lt;p id="p6">font-weight: 600</p>
+            &lt;p id="p7">font-weight: 700</p>
+            &lt;p id="p8">font-weight: 800</p>
+            &lt;p id="p9">font-weight: 900</p>
+            &lt;p id="p10">font-size: lighter</p>
+            &lt;p id="p11">font-size: bold</p>
+            &lt;p id="p12">font-size: bolder</p>
+        &lt;/body>
+        &lt;/html>
+</code></pre>
+
+</body>
+</html>
