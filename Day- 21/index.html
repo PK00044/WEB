@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="yellow cred cpurple">Example</h1>
+    <h2>CSS Specificity</h2>
+    <p>CSS Specificity helps determine what style will be applied to the HTML element(s) when there are overlapping or multiple CSS rules. </p>
+    <p>It is a value or weight assigned to a CSS selector. The higher the specificity, the more precedence the selector has.</p>
+    <h3><b>For Example we have above the Example h1 tag which is been applied purple even after adding many colors to it.</b></h3>
+    <pre><code>
+        &lt;style>
+            h1{
+                color: aqua;
+            }
+            .yellow{
+                color: yellow;
+            }
+            .cred{
+                color: red;
+            }
+            .cpurple{
+                color: purple;
+            }
+        &lt;/style>
+    &lt;/head>
+    &lt;body>
+    
+    &lt;h1 class="yellow cred cpurple">Example&lt;/h1>
+    </code></pre>
+    <p><b>The reason for the is the Cascade Algorithm</b></p>
+    <h2>The Cascade Algorithm</h2>
+    <p><b>CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason that the text of the button styled with the above CSS will be purple.</b></p>
+    <p>Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages.
+        <ol>
+            <li><b>Position and order of appearance:</b>the order in which your CSS rules appear</li>
+            <li><b>Specificity</b>:an algorithm that determines which CSS selector has the strongest match</li>
+            <li><b>origin:</b>the order in which CSS appears and where it comes from, wheather that is browser style, CSS from a browser extension. or your authored CSS.</li>
+            <li><b>Importance:</b>some CSS rules are weighted more heavily than others, especially with the !important rule type</li>
+        </ol>
+    </p>
+    <h2>!important</h2>
+
+    <p>The !important flag in CSS is used to give a particular style rule the highest level of importance, overriding any other competing styles. When you add !important to a CSS rule, it will take precedence over other rules affecting the same element, regardless of their specificity.</p>
+
+    <h2>Position</h2>
+
+    <p>If there are two rules that have selectors of identical specificity, the last one to be declared won. In an HTML page, you can add styles in different ways: through a &lt;link> tag, a &lt;style> tag, or directly in the element's style attribute. If you have one &lt;link> tag at the top of your page and another at the bottom, the styles from the bottom one will be used. The same goes for &lt;style> tags; the ones lower down on the page take priority.</p>
+        <p>
+        An inline style attribute with CSS declared in it will override all other CSS, regardless of its position, unless a declaration has !important defined.</p>
+      <p>  
+        If the browser doesn't support a property, it is ignored!</p> <br>
+    <h2>Specificity</h2>
+    <p>CSS specificity determines which style rules get applied to an element when there are conflicts. Higher specificity means the style will be used. It's calculated based on a point system involving inline styles, IDs, classes, and tag names.</p>
+    <strong>
+        So, the order of specificity is: <br>
+        
+        !important > Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector(and combining selectors like not, first-child, and last-child have the lowest specificity.)    </strong>
+    <div>
+        <h2>**Specificity Calculation**</h2>
+        <p>To calculate specificity, assign a value to each part of the selector:
+            <ul>
+                <strong>
+                <li>Universal Selector: 0</li>
+                <li>Element selectors and pseudo-elements: 1</li>
+                <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+                <li>ID selectors: 100</li>
+                <li>Inline styles: 1000</li>
+                <li>!important at the end of a CSS value gets a specificity score of 10,000 points.</li>
+
+                Then, add up the values of all the parts in the selector.
+            </strong>
+            </ul>
+        </p>
+    </div>
+    <h2>Quick Quiz</h2>
+    <p>What will be the specificity value of the following selector:
+        <pre><code>
+  a.harryclass.rohan-class[href]:hover 
+{
+    color: red;
+}
+        </code></pre>
+    </p>
+    <h2>Solution</h2>
+    <p> <strong>To calculate the specificity value of the selector a.harryclass.rohan-class[href]:hover, you can break down its components: <br>
+
+        1.Element selectors: a contributes 1 point. <br>
+        2.Class selectors: .harryclass and .rohan-class each contributes 10 points, totaling 20 points. <br>
+        3.Attribute selector: [href] contributes 10 points. <br>
+        4.Pseudo-class: :hover adds another 10 points. <br> <br>
+        Add up all these values: <br>
+        
+        1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41. <br>
+        
+        So, the specificity value of the selector a.harryclass.rohan-class[href]:hover will be 41. </strong></p>
+</body>
+</html>
