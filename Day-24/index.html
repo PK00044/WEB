@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and outline</title>
+    <style>
+        html{
+            background-color: black;
+            color: white;
+        }
+        .box{
+            background-color: white;
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 1px 8px 15px 5px red;
+            color: black;
+        }
+        .s{
+            text-shadow: 1px 8px 15px 5px black inset ;
+        }
+        .css{
+            text-shadow: 5px 8px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="css">CSS Shadows</h1>
+    <p>When it comes to web design, CSS (Cascading Style Sheets) plays an indispensable role in enhancing the visual aesthetics of a website. Among its vast array of properties, the ones that help bring depth and focus to an element are the shadow and outline properties.</p>
+    <h1>Box Shadows</h1>
+    <p>box-shadow is a popular CSS property that enables designers to add shadow effects around an element's frame. It can be used to give any element, be it a div, image, or button, a 3D feel or to emphasize on hover.</p>
+    <p>Box shadow works under a syntax <pre><code>box-shadow: h-offset v-offset blur spread color inset;</code></pre></p>
+    <ul>
+        <li>h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+        <li>blur: The larger the value, the blurrier the shadow.</li>
+        <li>spread: Expands or shrinks the shadow size.</li>
+        <li>color: Defines the shadow color.</li>
+        <li>inset: Makes the shadow inner.</li>
+    </ul>
+    <p>
+        For Example:-
+        <pre>.div-element { box-shadow: 5px 5px 15px 5px #888888; }</pre>
+    </p>
+    <pre><code>Style :-
+        .box{ 
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 1px 8px 15px 5px red;
+        }
+    </code></pre>
+    <pre><code>&lt;div class="box">
+        I'm a Box
+    &lt;/div>
+        <br></code></pre>
+
+    <div class="box">
+        I'm a Box
+    </div>
+  
+    <h1>Text shadow</h1>
+    <p>text - shadow is utilized to give Shadows spcifically to the text. It can elevate the readability of the text or give it an elegant apperance </p>
+    <p>The synatx for Text - Shadows is as follows:
+        <pre><code>text-shadow: h-offset v-offset blur color;</code></pre>
+    </p>
+    <p>For Example- 
+        <pre><code>
+.text-element { text-shadow: 2px 2px 4px #888888; }
+        </code></pre></p>
+    <h1>Outlines</h1>
+    <p>An outline is a line that is drawn around elements, outside the borders, to make the element "stand out". It's commonly used for accessibility purposes, like highlighiting focused elements. </p>
+    <p>The syntax for Outlines is as follows:- 
+        <pre><code>
+outline: width style color;
+        </code></pre>
+        <ul>
+            <li>width: Sets the outline width.</li>
+            <li>style: Determines the style of the outline such as solid, dotted, or dashed.</li>
+            <li>color: Sets the outline color.</li>
+        </ul>
+    </p>
+    <p>Here's am Example: 
+        <pre><code>.button-element:focus { outline: 2px solid blue; }</code></pre>
+    </p>
+   <h1>Differences between Borders and Outlines :</h1>
+   <ol>
+    While both can visually appear similar, outlines differ from borders in a few ways:
+
+    <li><b>Position:</b> Outlines don't take up space; they're drawn around the element, outside of any border.</li>
+    <li><b>Offset:</b> Using the outline-offset property, you can set the space between an outline and the edge or border of an element.
+   </li>
+   <li><b>Width:</b> Borders can have varying widths on different sides, outlines have a uniform width.
+</li>
+<li><b>Rounded Corners:</b> Borders can have rounded corners using border-radius, while outlines generally cannot.
+</li>
+   </ol>
+</html>
