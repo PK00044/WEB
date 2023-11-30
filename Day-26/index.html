@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS OverFlow</title>
+    <style>
+        .auto{
+            width: 200px;
+            height: 60px;
+            border: 2px solid;
+            overflow: auto;
+        }
+        .hidden{
+            width: 200px;
+            height: 60px;
+            border: 2px solid;
+            overflow: hidden;
+        }
+        .scroll{
+            width: 200px;
+            height: 60px;
+            border: 2px solid;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS OverFlow</h1>
+    <p>Sometimes the content shown is too large to be visible in a single line or division of the website. So, to avoid loss of that information we use overflow property</p>
+    Syntax
+    <strong>
+    <pre><code>
+        &lt;style>
+            overflow: OverFlow-x OverFlow-y        
+        &lt;/style>
+    </code></pre></strong>
+    <ol>
+        It has 4 ways
+        <li><b>auto</b></li>
+        <dt>It is quite similar to scroll but the scroller is only added when the content starts getting out of the container. Mostly this option is used to avoid unnecessary scroll bars if the content already is within the content dimensions.
+        </dt>
+        <li><b>hidden</b></li>
+        <dt>It hides the content which doesn't fit the box.</dt>
+        <li><b>scroll</b></li>
+        <dt>It adds an automatic scroller in the container so for the seeing the content it can be scrolled without affecting the container dimensions.</dt>
+        <li><b>visible</b></li>
+        <dt>This makes the whole text visible irrespective of the container size. </dt>
+    </ol>
+    <strong>
+        Notes:
+        <ul>
+        <li>white space means that dont drop the text down</li>
+        <li>text-overflow: ellipsis does that it shows ... representation of the overflowed text</li>
+        <li>OverFlow-x contgrols the x axis and y for y axis </li>
+        <li>overflow clip removes the scroll programatically </li>
+        <li>we can add overflow x and y axis using short hand property also
+        i.e, overflow: x value  y value; </li>
+    </ul>
+    </strong>
+    <hr>
+    Examples:
+    <div>
+        1. auto <br> <br>
+        <div class="auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, modi accusantium! Explicabo praesentium quos sapiente possimus, cumque ullam assumenda illum rem tempora omnis deserunt natus voluptatum animi quasi recusandae, obcaecati id inventore blanditiis. Hic iure provident sed nisi dolore possimus laborum aspernatur dolores eos fugit!
+        </div>
+    </div> <br>
+    <div>
+        2. hidden <br> <br>
+        <div class="hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, modi accusantium! Explicabo praesentium quos sapiente possimus, cumque ullam assumenda illum rem tempora omnis deserunt natus voluptatum animi quasi recusandae, obcaecati id inventore blanditiis. Hic iure provident sed nisi dolore possimus laborum aspernatur dolores eos fugit!
+        </div>
+    </div> <br>
+    <div>
+        3. scroll <br> <br>
+        <div class="scroll">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, modi accusantium! Explicabo praesentium quos sapiente possimus, cumque ullam assumenda illum rem tempora omnis deserunt natus voluptatum animi quasi recusandae, obcaecati id inventore blanditiis. Hic iure provident sed nisi dolore possimus laborum aspernatur dolores eos fugit!
+        </div>
+    </div>
+</body>
+</html>
