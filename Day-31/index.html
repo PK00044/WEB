@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        @media screen and (orientation:landscape) {
+            body{
+                border: 3px solid blue;
+            }
+        }
+        @media screen and (orientation:portrait) {
+            body{
+                border: 3px solid red;
+            }
+           
+        }
+
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blue;
+            }
+             .boxes{
+                flex-direction: column;
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Media Queries</h1>
+    <p>Basically used for website Responsiveness</p>
+    syntax: @media not / only mediatype(all, print, screen, speech devices) and (expressions) CSS - Code;
+    <pre><code>1. @media </code></pre> 
+    It shows ur writing media Query.
+    <h2>BreakPoints</h2>
+    <p>Usally we make sure to use BreakPoints for phone, laptops, ipads and other devices.</p>
+    <ol>
+        <li>Phone:- 455px(approx)</li>
+        <li>Tablets:- 450px - 750px</li>
+        <li>Big Screens:- 1080px - 1920px</li>
+        etc
+    </ol>
+
+    <b>One more example</b>
+    @media screen and (orientation:landscape / portrait)
+<div>
+    For example:-
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --color:blue;
+            --seccolor: rgb(161, 161, 237);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 50px;
+        }
+        ul li:first-child{
+            --color:rgb(255, 68, 0);
+            background-color: var(--color,yellow);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Variables</h1>
+    <div><ol>
+        <strong>
+            <li>In CSS The variables are decalred using :root(It is  a global variable) and then the variables are decalred in {} to use variables in the code we use var() function. </li><br>
+            <li>Now if we want the varible as local then we declared it in that particular style block. If we have declared same variable in the global scope then it then it will overwrite. </li><br>
+           <li> Now if variable is not found then we can give a fall back variable just we use ""var(variable_name, alernate_color)""</li><br>
+           <li>The Variables are not only used to apply color but we can use them even to store <acronym title="">LENGTH UNITS, BACKGROUND URL's, STRINGS, NUMBERS </acronym>etc,. and all these things which can be held so basically the things you will find yourself changing in your website.</li>
+        </strong>
+    </ol>
+    </div> <br><hr><hr> <br>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi beatae hic deleniti. Quaerat ipsa reiciendis necessitatibus optio magnam officiis corporis ea voluptate, cupiditate veritatis voluptas nisi maiores, aut architecto expedita voluptatum quasi officia accusamus. Soluta facilis voluptatibus odio quos maxime vel magnam voluptatem sed. Fugiat.
+    </div>
+
+
+
+</body>
+</html>

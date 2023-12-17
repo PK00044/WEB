@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design of a Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 500px;
+            width: 500px;
+            background-color: grey;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            padding:100px ;
+        }
+
+        .outer{
+            border-radius: 15px;
+            width: 344px;
+            height: 444px;
+            padding-bottom: 20px;
+            background-color: #fff;
+        }
+        .image img{
+            border-radius: 15px;
+            padding: 5px;
+            
+        }
+        span{
+            border: 1px solid grey;
+            border-radius: 20px;
+            padding: 2px 15px 2px 15px;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        .read{
+            text-align: center;
+        }
+        button{
+            border-radius: 50px;
+            background-color:cyan;
+            color: blue;
+            text-shadow: 40px blue;
+            padding: 10px;
+            border: none;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(1, 1, 1);
+            color: rgb(122, 122, 230);
+        }
+        p,h2{
+            padding: 8px 15px 0px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="image">
+            <img src="download.jpg" alt="HIll Station" width="330px">
+        </div>
+        <div>
+            <span class="nature">Nature</span>
+            <span class="Hill">Hill</span>
+        </div>
+        <div class="content">
+            <h2>Almora</h2>
+            <p>Widely known for its picturesque places and cultural diversity, Almora is the cultural heart of the Kumaon region in Uttarakhand. The months April, May, June, September, October and November are highly favourable to visit this place. It is the perfect destination for the people having interest in history. </p>
+        </div>
+        <div class="read">
+           <button>Read More</button>
+        </div>
+    </div>
+</body>
+</html>

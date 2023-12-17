@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        img{
+            /* float:right; */
+            display: flow-root;
+        }
+        .cards{
+            border: 4px solid black;
+        }
+        .card{
+            border: 4px solid red;
+            clear: both;
+        }
+        .card2{
+            float: left;
+            display: flow-root;
+            width: 250px;
+            /* clear: both; */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Float and Clear</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6_UoTF7njLM?si=31hYh0mq_stU-HKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Just like how “wrap through” works in MS Word, the float property allows the balance between text and the image shown beside it. </p>
+    <strong>Float is used to float the image / any text to either left or right and clear is used to tell that the particular thing which is floating should to appear on left or right or both(L or 
+        R)</strong>
+    <h1>But not recommened to use a lot when we have flexbox</h1>
+    <div class="cards">
+        <img src="https://th.bing.com/th?id=OIP.nPre0OcqnRAehXyeT75gjgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="" width="250px">
+        <div class="card">Card 1</div>
+        <div class="card card2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptates perferendis laboriosam illum libero, dolore nobis eaque ipsa iusto adipisci distinctio in harum perspiciatis sed a laborum neque delectus officiis qui pariatur tempora! Facilis nemo at nesciunt corrupti magni sint et. Deserunt, molestias! Dicta veniam sequi, recusandae nulla tenetur consectetur nemo vero corrupti neque quod sunt quae praesentium placeat! Perspiciatis minus vitae, alias libero, eveniet natus corrupti molestias accusantium asperiores, et nesciunt est maxime dolorum vel hic quod? Quo in expedita exercitationem magnam, dolore doloremque laboriosam odio incidunt quas consectetur molestias unde numquam, reiciendis eum, delectus nihil ex accusamus ipsam aut consequuntur sit provident rem vero animi. Dolorem, iusto quam aperiam repudiandae vel facere ut architecto explicabo porro iste nemo ullam natus et repellat exercitationem, quia dicta nesciunt omnis quo quaerat sunt! Quo, magnam! Dolorem omnis neque velit animi veniam nesciunt rerum harum deleniti distinctio porro reiciendis, praesentium eos, culpa adipisci unde id at est sapiente? Maxime nam animi deserunt veniam error quos eum, nobis accusantium consequuntur placeat cupiditate natus architecto consequatur molestias quas unde consectetur deleniti libero ipsam. Incidunt magnam minima maiores, voluptatibus perferendis deserunt aspernatur exercitationem quae dolorum minus consequuntur rem cumque consequatur quibusdam aut expedita, deleniti eius ipsa nemo omnis. Beatae corrupti praesentium possimus, ipsum error, accusamus vitae ratione minus obcaecati eum, dignissimos iure rem earum? Laborum repellendus exercitationem, ipsum totam dicta temporibus facilis laboriosam ratione quisquam harum fuga adipisci ipsam in natus aut mollitia praesentium repudiandae illo esse minima quis, tenetur quod. Quidem totam quaerat, explicabo nihil nam aspernatur non ducimus consequatur dolorum exercitationem, doloribus fuga? Accusantium earum quidem, sed pariatur possimus accusamus architecto provident nemo ullam id, perspiciatis aliquid? Vero, reprehenderit! Tenetur nihil corrupti quaerat doloribus doloremque quasi ratione corporis sit a ex, dolorum ab accusamus aliquid soluta, iusto quod temporibus nam dicta error in. Ea laudantium autem repellendus voluptatum quidem incidunt perspiciatis recusandae, illum praesentium. Eius pariatur vitae quo accusamus excepturi! Iusto eligendi delectus alias vitae, doloremque id hic facere voluptate? Laudantium, ut quo quis voluptates, eius hic qui culpa nam nobis at pariatur quaerat consequuntur! Reprehenderit voluptatum voluptatem dicta repellendus odit, impedit expedita?</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
