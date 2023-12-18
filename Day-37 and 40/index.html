@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+        .sections{
+            display: flex;
+            margin: 12px 34px;
+            padding: 55px 23px ;
+            justify-content: center;
+            background-color: rgba(198, 239, 115, 0.899);
+        }
+        .s1{
+            margin: 50px;
+
+            background-color: rgb(116, 128, 104);
+            width: 550px;
+            height: 350px;
+        }
+        .s2{
+            margin: 50px;
+            background-color:blue;
+            width: 550px;
+            height: 350px;
+        }
+        nav{
+            font-size: large;
+            position: sticky;
+            background-color: aqua;
+        }
+        ul{
+ 
+            display: flex;
+            justify-content: center;
+        }
+        ul li{
+            padding: 50px;
+            list-style: none;
+        }
+        .wel{
+            color: wheat;
+            padding: 34px;
+            border: 2px solid black;
+            margin: 50px 34vw;
+            font-size: 25px;
+            border-radius: 13px;
+        }
+        .cir{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            color: wheat;
+
+            position: fixed;
+            right: 50px;
+            bottom: 12px;
+
+
+
+            font-size: 25px;
+            width: 100px;
+            height: 100px;
+
+            background-color: black;
+            border-radius: 50px;
+        }
+        footer{
+            padding: 34px;
+            border: 2px solid white;
+            font-size: 25px;
+            height: 100px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT US</li>
+                <li>DESIGNS</li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+   <div class="sections">
+        <div class="s1"></div>
+        <div class="s2"></div>
+   </div>
+   <hr>
+   <div>
+        <div class="wel">
+            <p>Hey, I'm Pratham</p>
+        </div>
+   </div>
+   <div class="cir">HI!</div>
+
+
+
+   <footer>
+        <p>Pratham</p>
+   </footer>
+</body>
+</html>
