@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        }
+
+        .box::first-line{
+            color: yellow;
+        } */
+
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+
+        [data-color="primary"]{
+            padding-top: 45px;
+        } */
+
+        /* This basically selects only even childs */
+
+        /* .box:nth-child(even){
+            background-color: blue;
+            color: wheat;
+        } */
+
+        /* This basically selects from the last child */
+        /* .box:nth-last-child(1 or 2 or....){
+            background-color: blue;
+            color: wheat;
+        } */
+
+        /* Pseudo Elements */
+
+        /* .boxes::before{
+            content: "Pratham";
+            color: wheat;
+            background-color: black;
+        }
+        .boxes::after{
+            content: "Harii bahsdkbhkdbvkd";
+        } */
+        
+        /* This applies when we select a particular code */
+        /* ::selection{
+            background-color: yellow;
+            color: red;
+        } */
+        /* This bascially selects the first letter */
+        /* .box::first-letter{
+            background-color: black;
+            color: bisque;
+            font-size:25px;
+        } */
+
+        /* input::placeholder{
+            color: rgb(62, 62, 67);
+            font-size: 25px;
+        } */
+    </style>
+</head>
+<body>
+    <h1>More on CSS Selectors</h1>
+    <div class="boxes">
+        <div data-color="primary"class="box">Hey i am a box</div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, doloribus molestias. Atque nihil architecto ad odio nisi minima excepturi alias? Explicabo dolor minus nobis quas?</div>
+        <div class="box">Hey i am a box</div>
+        <input type="text" placeholder="Type ur name here?">
+    </div>
+</body>
+</html>
