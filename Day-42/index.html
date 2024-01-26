@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        .box{
+            width: 145px;
+            height: 145px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(45deg); */
+            /* transform: rotate(0.25turn); */
+            /* transform: rotateX(45deg); */
+            /* transform: rotateY(45deg); */
+            /* transform: rotateZ(45deg); */
+            /* transform: skew(45deg); */
+            /* transform: skewy(15deg); */
+            /* transform: scale(1.6); */
+            /* transform: scaleY(1.6); */
+            /* transform: translate(45px); */
+            /* transform: translate(45%); */
+            /* transform: translate(45px) skew(45deg) translateX(55px); */
+            transform: translate(-45px) skew(-45deg) translateX(-55px);
+
+
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transforms</h1>
+    <ol>
+        There are 2 types of Transforms:
+        <li>2D Transform</li> 
+        <li>3D Transform</li>
+    </ol>
+    <h2>2D Transform</h2>
+    This property allows the content to be restructured in ways like translate, rotate, scale or skew,etc. As it is 2D, therefore the content is transformed into x and y dimensions.
+    <h1>3D Transform</h1>
+    CSS transform 3D is a property that allows you to rotate, translate, and scale elements in a three-dimensional plane. It uses different methods to manipulate the position and orientation of the elements along the x, y, and z axes.
+    <h5>Transform origin is a point from where the box is rotatingg</h5>
+    <h1>For Example</h1>
+
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>
